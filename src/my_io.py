@@ -59,11 +59,11 @@ def read_nuclei_mask(ROI: str, data_ROI):
     dir_ = data_ROI 
 
     # Get images in directory
-    dirpath, _, filenames = next(os.walk(dir_))
-    for name in filenames:
-        if ROI in name:
-            mask_name = name
-    mask = skimage.io.imread(os.path.join(dirpath, mask_name))
+    for dirpath, _, filenames in os.walk(data_ROI):
+        for name in filenames:
+            if ROI in name:
+                mask_name = name
+        mask = skimage.io.imread(os.path.join(dirpath, mask_name))
 
     return mask
 

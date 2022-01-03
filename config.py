@@ -5,6 +5,9 @@ data_raw = data_dir / 'raw'
 data_ROI = data_dir / 'ROI'
 data_nuclei = data_dir / 'nuclei'
 
+data_tonsil = data_dir / 'tonsil' / 'raw'
+data_tonsil_mask = data_dir / 'tonsil' / 'masks'
+
 data_figure = (Path().cwd().parents[0] / 'figures').absolute()
 data_cluster = data_figure / 'cluster'
 data_ex_level = data_figure / 'expression_level'
