@@ -1,35 +1,16 @@
 This folder contains the scripts and data to reproduce the result in the paper "Spatially variant immune infiltration scoring in human cancer tissues"
 
-<!-- From IMC image dataset, we can look at Immune cell expression in health and disease  -->
+From IMC image dataset, we look at tumor microenvironment in Lung Tumor with cancer, stromal, macrophage and T-cell markers.
 
-<!-- ![Alt text](figures/stats/count_Icell.png)
+![Alt text](figures/examples/multiplex.PNG)
 
-The expression level for all the markers across health and disease can be summarized as follow:
+Single-cell and pixel level phenotype is analyzed via unsupervised clustering
 
-![Alt text](figures/stats/dotplot_expression.png)
+![Alt text](figures/examples/clustering.PNG)
 
-Then, pixel level clustering with KMeans is performed to extract the anatomical properties.
+Based on single-cell phenotype, we looked at immune cell infiltration in cancer region from cell neighborhood graph.
 
-![Alt text](figures/clusters/DT2_cluster_by_marker.png?raw=true)
-
-The clustered images are then combined together in one image in order to visualize the clusters representation
-
-![Alt text](figures/clusters/DT2_cluster_combined2.png?raw=true)
-
-In order to better understand the spatial anatomy in various dataset, intra and inter cluster distance network is generated
-
-![Alt text](figures/clusters/DT2_cluster_inter.png)
-![Alt text](figures/clusters/DT2_cluster_intra.png)
-
-It is also possible to look at individual markers by generating spatial reference map with fixed node 
-
-![Alt text](figures/clusters/DT2_spatial_reference.png)
-
-It is possible to look at the 2D and 3D topographic layer of specific markers such as CD44, Pankeratin and GranzymeB
-
-![Alt text](figures/3D_topo/DT2_expression2.png)
-![Alt text](figures/3D_topo/DT2.png) -->
-
+![Alt text](figures/examples/immunoscore.PNG)
 
 # Organization
 
